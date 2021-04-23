@@ -48,7 +48,7 @@ class _HomeState extends State<Home> {
         controller: _controller,
       ),
       length: _allBanners.length,
-      padding: EdgeInsets.fromLTRB(10, 40, 10, 10),
+      // padding: EdgeInsets.fromLTRB(10, 40, 10, 10),
       indicatorSpace: 10,
       indicatorColor: Colors.grey[350],
       indicatorSelectorColor: Colors.grey,
