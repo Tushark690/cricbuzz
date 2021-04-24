@@ -5,12 +5,14 @@ class BannerCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
+    return Container(
+      padding: EdgeInsets.only(left: 10,right: 10),
       child: Container(
-        padding: EdgeInsets.all(10),
+        // padding: EdgeInsets.all(10),
         // color: Colors.grey,
+        width: MediaQuery.of(context).size.width*8/10,
         child: Card(
-          color: Colors.grey,
+          color: Color(0xffecebeb),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -34,14 +36,14 @@ class BannerCard extends StatelessWidget {
                           ],
                         ),
                         SizedBox(
-                          height: 10,
+                          height: 12,
                         ),
                         Row(
                           children: [
                             Expanded(
                               child: Row(
                                 children: [
-                                  Icon(Icons.shield),
+                                  Text("\ud83c\udde6\ud83c\uddeb",style: TextStyle(fontSize: 18),),
                                   SizedBox(
                                     width: 10,
                                   ),
@@ -60,14 +62,14 @@ class BannerCard extends StatelessWidget {
                           ],
                         ),
                         SizedBox(
-                          height: 10,
+                          height: 15,
                         ),
                         Row(
                           children: [
                             Expanded(
                               child: Row(
                                 children: [
-                                  Icon(Icons.shield),
+                                  Text("\ud83c\uddee\ud83c\uddf3",style: TextStyle(fontSize: 18),),
                                   SizedBox(
                                     width: 10,
                                   ),
@@ -85,12 +87,13 @@ class BannerCard extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(height: 10,),
+                        SizedBox(height: 15,),
                         Row(
                           children: [
-                            Expanded(child: Text("Punjab Kings need 50 runs in 42 balls",style: TextStyle(color: Colors.red,fontSize: 16,fontWeight: FontWeight.w600),))
+                            Expanded(child: Text("Punjab Kings need 50 runs in 42 balls",style: TextStyle(color: Color(0XFFd0021b),fontSize: 16,fontWeight: FontWeight.w400),))
                           ],
                         ),
+                        SizedBox(height: 5,),
                         // Spacer(),
 
                       ],
@@ -112,8 +115,8 @@ class BannerCard extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          FlatButton(onPressed: (){}, child: Text("POINTS TABLE")),
-                          FlatButton(onPressed: (){}, child: Text("Schedule"))
+                          FlatButton(onPressed: (){}, child: Text("POINTS TABLE",style: TextStyle(fontWeight: FontWeight.w400,fontSize: 15,color: Colors.black54),)),
+                          FlatButton(onPressed: (){}, child: Text("SCHEDULE",style: TextStyle(fontWeight: FontWeight.w400,fontSize: 15,color: Colors.black54),))
                         ],
                       ),
                     ),

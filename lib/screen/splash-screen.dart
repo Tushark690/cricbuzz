@@ -31,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.cyanAccent,
+        color: Color(0xff35ad89),
         child: SafeArea(
             child: Center(
               child: Image.network("https://m.cricbuzz.com/public/images/cricbuzz/cb_logo.png")

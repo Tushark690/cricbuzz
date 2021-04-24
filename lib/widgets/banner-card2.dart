@@ -8,9 +8,11 @@ class BannerCard2 extends StatefulWidget {
 class _BannerCard2State extends State<BannerCard2> {
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Container(
-        child: Card(
+    return Container(
+      width: MediaQuery.of(context).size.width*8/10,
+      child: Card(
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(5),
           child: Image.network(
             "https://tpc.googlesyndication.com/simgad/4695459442067522482",
             fit: BoxFit.fill,
